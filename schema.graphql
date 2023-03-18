@@ -1,0 +1,35 @@
+type ChildGeneration @entity(immutable: true) {
+  id: Bytes!
+  parentAddress: Bytes! # address
+  childAddress: Bytes! # address
+  childNumber: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type InitializeChild @entity {
+  id: ID!
+  parentAddress: Bytes! # address
+  childAddress: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+} 
+
+type Deposit @entity {
+  id: ID!
+  user: Bytes! # address
+  value: BigInt! # uint256  
+  blockNumber: BigInt!
+  timestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Withdraw @entity {
+  id: ID!
+  user: Bytes! # address
+  value: BigInt! # uint256
+  blockNumber: BigInt!
+  timestamp: BigInt!
+  transactionHash: Bytes!
+}

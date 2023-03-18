@@ -1,0 +1,8 @@
+{
+  "goerli": {
+    "Factory": {
+      "address": "0x3cf0fd76dcfecdcd07bd44d053a26b4921f12e05",
+      "startBlock": 8490143
+    }
+  }
+}
